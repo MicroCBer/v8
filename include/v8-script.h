@@ -415,14 +415,13 @@ class V8_EXPORT ScriptCompiler {
     V8_INLINE const CachedData* GetCachedData() const;
 
     V8_INLINE const ScriptOriginOptions& GetResourceOptions() const;
-
+    Local<String> source_string;
+    Local<Value> resource_name;
    private:
     friend class ScriptCompiler;
 
-    Local<String> source_string;
-
     // Origin information
-    Local<Value> resource_name;
+   
     int resource_line_offset;
     int resource_column_offset;
     ScriptOriginOptions resource_options;
