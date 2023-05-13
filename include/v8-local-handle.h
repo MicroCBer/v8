@@ -271,7 +271,7 @@ class Local {
     return New(isolate, *that);
   }
 
- private:
+//  private:
   friend class TracedReferenceBase;
   friend class Utils;
   template <class F>
